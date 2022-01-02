@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+body{
+    background-color: whitesmoke;
+}
+
+label{
+    margin-right: 13px;
+}
+
+input[type='button']{
+    margin-left: 10px;
+}
+
+#memoryField{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.disappear{
+    visibility: hidden;
+}
+
+#start{
+    background-color: #AFE64C;
+    border-radius: 5px;
+    border-color: #436800;
+    padding: 4px;
+}
+
+#start:hover{
+    background-color: #436800;
+    color: white;
+}
+
+.card {
+    background-color: transparent;
+    width: 85px;
+    height: 85px;
+    perspective: 1000px;
+    margin: 4px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.rotate{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #759A33;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #759A33;
+    color: white;
+    transform: rotateY(180deg);
+}

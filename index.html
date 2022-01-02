@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Memory Game</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h1>Memory</h1>
+<div id="select">
+	<input type="radio" name="level" id="easy" value="easy" required>
+	<label for="easy">4x4</label>
+	<input type="radio" name="level" id="middle" value="middle">
+	<label for="middle">4x6</label>
+	<input type="radio" name="level" id="hard"
+	       value="hard">
+	<label for="hard">6x6</label>
+	<input type="button" value="Start" id="start">
+</div>
+<div id="memoryField">
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
